@@ -1,0 +1,16 @@
+{{ define "head" }}
+<meta layout="index.html">
+ {{- partial "head.html" . -}}
+{{ end }}
+
+{{ define "navbar" }}
+ {{- partial "navbar.html" . -}}
+{{ end }}
+
+{{ define "main" }}
+{{ .Content }}
+{{ end }}
+
+{{ define "footer" }}
+  {{- partial "footer.html" . -}}
+{{ end }}

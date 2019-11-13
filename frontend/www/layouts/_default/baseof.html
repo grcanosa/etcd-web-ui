@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    {{ block "head" . }}
+    {{ end }}
+  </head>
+  <body class="h-100">
+      <div class="container-fluid h-100">
+          <div class="row h-100">
+              
+        {{ block "navbar" .}}
+            
+        {{ end}}
+      <main class="col bg-faded py-3 h-100">
+        {{ block "main" .}}
+           
+        {{ end }}
+      </main>
+        </div>
+        {{ block "footer" .}}
+
+        {{ end}}
+    </body>
+</html>

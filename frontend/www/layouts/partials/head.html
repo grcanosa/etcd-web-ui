@@ -1,0 +1,12 @@
+      <title>
+         {{ .Title }}
+      </title>
+      <link rel="stylesheet" href="{{ "assets/3rd/bootstrap/css/bootstrap.css" | relURL }}">
+      <link rel="stylesheet" href="{{ "assets/3rd/fontawesome/css/all.css" | relURL }}">
+      <link rel="stylesheet" href="{{ "assets/css/common.css" | relURL }}">
+
+{{- with .Params.css}}
+   {{- range $mycss := . }}
+      <link rel="stylesheet" href="{{ $mycss | relURL }}">
+   {{end -}}
+{{end -}}

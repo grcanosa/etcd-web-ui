@@ -1,0 +1,15 @@
+baseURL: ""
+# languageCode: "es-es"
+# language: "es"
+title: "Stratio Presence Control"
+disableKinds:
+  - "taxonomy"
+  - "taxonomyTerm"
+  - "RSS"
+  - "robotsTXT"
+  - "sitemap"
+  - "404"
+metaDataFormat: "yaml"
+publishDir: "final_site"
+#relativeUrls: true
+disableLiveReload: true

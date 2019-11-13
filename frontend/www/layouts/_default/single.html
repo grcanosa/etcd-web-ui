@@ -1,0 +1,22 @@
+{{ define "head" }}
+    <meta layout="_default/single.html">
+    {{- partial "head.html" . -}}
+{{ end }}
+
+{{ define "navbar" }}
+   {{- partial "navbar.html" . -}}
+{{ end }}
+
+{{ define "main" }}
+<div class="row">
+  <div class="col-12 col-sm-12 col-md-10 col-lg-9 col-xl-8" style="text-align: justify">
+    {{ .Content }}
+  </div>
+</div>
+  
+{{ end }}
+
+{{ define "footer" }}
+    {{- partial "footer.html" . -}}
+    
+{{ end }}

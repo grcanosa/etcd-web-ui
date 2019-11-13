@@ -1,0 +1,10 @@
+<script src="{{ "assets/3rd/jquery/jquery-3.3.1.min.js" | relURL}}"></script>
+<script src="{{ "assets/3rd/popper/popper.min.js" | relURL}}"></script>
+<script src="{{ "assets/3rd/bootstrap/js/bootstrap.min.js" | relURL}}"></script>
+<script src="{{ "assets/js/testing.js" | relURL}}"></script>
+
+{{- with .Params.js}}
+      {{range $myjs := . }}
+        <script src="{{ $myjs | relURL}}"></script>
+    {{end}}
+{{end -}}

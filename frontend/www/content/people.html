@@ -1,0 +1,65 @@
+---
+title: People 
+js:
+  - assets/js/people.js
+---
+<div class="row">
+    <div class="col">
+            <form>
+                    <div class="form-group row">
+                        <div class="col">
+                                <label for="employeeid">EmployeeId</label>
+                                <input class="form-control" type="number" id="employeeid" name="employeeid" min=1 value=1001>
+                        </div>
+                    <div class="col">
+                        <label for="year">Year</label>
+                        <input class="form-control" type="number" id="year" name="year" min="2000" value="2019">
+                    </div>
+                    <div class="col">
+                        <label for="month">Month</label>
+                        <input class="form-control" type="number" id="month" name="month" min="1" max="12" value="1">
+                    </div>
+                    </div>
+                </form>
+                   
+           
+    </div>
+</div>
+<div class="row mb-5">
+    <div class="col">
+            <button type="submit" class="btn btn-primary" onclick="get_employee_presences()">Get Employee Presences</button>
+            <button type="submit" class="btn btn-primary" onclick="get_employee_effective_hours()">Get Employee Effective Hours</button>
+    </div>
+</div>
+<div class="row employeerequestdiv" id="employee_presences_div" style="display:none;">
+    <div class="col">
+        <h3>Employee Presences</h3>
+            <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Date Time</th>
+                        <th scope="col">ScannerId</th>
+                        <th scope="col">Comment</th>
+                      </tr>
+                    </thead>
+                    <tbody id="employee_presences_tbody">
+                    </tbody>
+            </table>
+    </div>
+</div>
+<div class="row employeerequestdiv" id="employee_hours_div" style="display:none;">
+        <div class="col">
+            <h3>Employee Effective Hours</h3>
+                <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Hours</th>
+                            <!-- <th scope="col">Anomalies</th> -->
+                          </tr>
+                        </thead>
+                        <tbody id="employee_hours_tbody">
+                        </tbody>
+                </table>
+        </div>
+    </div>
